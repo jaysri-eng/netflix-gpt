@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  // using strict mode causes some api calls to be called 2 times 
   <React.StrictMode>
     <App />
   </React.StrictMode>

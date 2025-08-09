@@ -3,7 +3,10 @@
 - Configred Tailwind CSS
 - Built header'
 - Login and Signup functionality
-- Firebase setup and deployed 
+- Firebase setup and deployed
+- Created Redux store to store user data
+- Bug fixes, unsubscribed to the onAuthStateChange callback
+- Added TMDB API calls 
 
 # Features
 - Login/Signup 
