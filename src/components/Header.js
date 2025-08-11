@@ -45,7 +45,7 @@ const Header = () => {
             src={LOGO}
             alt="Logo"/>
             <div className="cursor-pointer">
-                <p onClick={handleLogout} className="font-bold underline">Logout</p>
+                <p onClick={handleLogout} className="font-bold underline text-white">Logout</p>
             </div>
         </div>
     )
