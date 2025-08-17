@@ -5,6 +5,7 @@ import { useEffect } from "react"
 import { onAuthStateChanged } from "firebase/auth"
 import { useDispatch } from "react-redux"
 import { addUser, removeUser } from "../utils/UserSlice"
+import { toggleGptSearchView } from "../utils/gptSlice";
 import { LOGO } from "../utils/Constants";
 
 const Header = () => {
@@ -38,13 +39,18 @@ const Header = () => {
         return () => unsubscribe(); //unsubscribe when the component unmounts
     },[dispatch,navigate])
 
+    const handleSearch = () => {
+        dispatch(toggleGptSearchView());
+    }
+
     return (
         <div className="absolute flex justify-between items-center w-screen px-5 py-2 bg-gradient-to-b from-black z-10">
             <img 
             className="w-40"
             src={LOGO}
             alt="Logo"/>
-            <div className="cursor-pointer">
+            <div className="cursor-pointer flex gap-5">
+                <p onClick={handleSearch} className="font-bold text-white">Search</p>
                 <p onClick={handleLogout} className="font-bold underline text-white">Logout</p>
             </div>
         </div>

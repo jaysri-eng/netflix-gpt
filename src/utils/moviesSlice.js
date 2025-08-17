@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const moviesSlice = createSlice({
     name: "movies",
     initialState: {
-        nowPlayingMovies: null,
+        nowPlayingMovies: [],
         trailerVideo: null,
     },
     reducers: {
@@ -14,7 +14,7 @@ const moviesSlice = createSlice({
             state.trailerVideo = action.payload
         },
         removeMovies: (state,action)=>{
-            state.nowPlayingMovies = null;
+            state.nowPlayingMovies = [];
         }
     }
 })
