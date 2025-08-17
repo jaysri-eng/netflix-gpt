@@ -7,6 +7,8 @@
 - Created Redux store to store user data
 - Bug fixes, unsubscribed to the onAuthStateChange callback
 - Added TMDB API calls 
+- Added GPT(Open AI) API functionality
+- Movie list and Movie cards design and functionality
 
 # Features
 - Login/Signup 
