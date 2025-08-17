@@ -6,7 +6,8 @@
 - Firebase setup and deployed
 - Created Redux store to store user data
 - Bug fixes, unsubscribed to the onAuthStateChange callback
-- Added TMDB API calls 
+- Added TMDB API calls
+- Built the search bar page 
 - Added GPT(Open AI) API functionality
 - Movie list and Movie cards design and functionality
 
